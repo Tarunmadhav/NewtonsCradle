@@ -3,7 +3,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-
+const Constraint=Matter.Constraint;
 function preload()
 {
 	
@@ -25,8 +25,8 @@ function setup() {
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
 	World.add(world, ground);
 	
-	box=createSprite(400,300,200,10,{isStatic:true});
-	box.shapeColor="red";
+	box = new Roof(400,300);
+	//box.shapeColor="red";
 
 	Engine.run(engine);
 }
