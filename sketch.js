@@ -40,7 +40,7 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
-
+box.display();
   drawSprites();
  
 }
